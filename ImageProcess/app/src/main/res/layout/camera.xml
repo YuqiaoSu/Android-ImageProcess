@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/pictureSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greyScale"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="保存/Save"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pictureSave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/blur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="blur/模糊" />
+
+    <Button
+        android:id="@+id/sharpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@id/blur"
+        android:text="Sharpen/锐化" />
+
+    <Button
+        android:id="@+id/sepia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/sharpen"
+        android:text="Sepia/老旧" />
+
+    <Button
+        android:id="@+id/greyScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blur"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="-46dp"
+        android:text="greyScale/灰白" />
+
+    <Button
+        android:id="@+id/mosaic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/greyScale"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/greyScale"
+        android:text="Mosaic/马赛克" />
+
+    <Button
+        android:id="@+id/undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/pictureSave"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@id/pictureSave"
+        android:text="Undo/撤回" />
+
+</RelativeLayout>
